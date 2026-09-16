@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1 ;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bolder;
+    color: gray;
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+nav a:hover{
+    color: gray;
+}
+
+/*Hero section*/
+.Hero{
+    height: 100dvh;
+    background: linear-gradient(rgba(0,0,0,0.6)), url('phones images/website.png') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+
+}
+.content p{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.btn{
+    padding: 12px 24px;
+    background-color: gray;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.8s;
+}
+.btn:hover{
+    background-color: rgb(197, 195, 192);
+
+}
+/*Product section*/
+.Product{
+    padding: 80px 10%;
+    text-align: center;
+    
+}
+.Product h2{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    padding-bottom: 20px;
+}
+.card:hover{
+    transform:translateX(10px);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card h3{
+    margin: 15px 0;
+}
+.card p{
+    padding: 0 15px 20px;
+    text-align: center;
+}
+
+/*About section*/
+.About{
+    background-color: lightgray;
+    padding: 80px 10%;
+    text-align: center;
+}
+.About h2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.About p{
+    margin-bottom: 40px;
+}
+
+/*Contact us*/
+.Contact{
+    padding: 80px 10%;
+    text-align: center;
+}
+.Contact h2{
+    margin-bottom: 40px;
+}
+.Contact p {
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+footer{
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Responsive design*/
+@media(max-width: 750px){
+    .logo{
+        font-size: 10px;
+    }
+    nav a{
+        font-size: 8px;
+        flex-direction: column;
+    }
+    .Hero h1{
+        font-size: 1.4rem;
+    }
+    .Hero p{
+        font-size: 16px;
+    }
+    .btn{
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    
+}
+    
